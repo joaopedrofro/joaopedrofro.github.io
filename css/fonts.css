@@ -1,0 +1,61 @@
+/*--- Configuração das fontes utilizadas no site ---*/
+
+@font-face {
+    font-family: "New York Large";
+    src: local("New York Large"),
+         url(../fonts/FontsFree-Net-NewYorkLargeBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "New York Small";
+    src: local("New York Small"),
+         url(../fonts/FontsFree-Net-NewYorkSmallRegular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "New York Small Medium";
+    src: local("New York Small Medium"),
+         url(../fonts/FontsFree-Net-NewYorkSmallMedium.ttf);
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: local("SF Mono"),
+         url(../fonts/SFMonoRegular.otf);
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: local("SF Pro Display"),
+         url(../fonts/SFPRODISPLAYBOLD.OTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: local("SF Pro Display"),
+         url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: local("SF Pro Text"),
+         url(../fonts/SF-Pro-Text-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text Medium";
+    src: local("SF Pro Text"),
+         url(../fonts/SF-Pro-Text-Medium.otf);
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: local("SF Pro Text"),
+         url(../fonts/SF-Pro-Text-Bold.otf);
+    font-weight: bold;
+}

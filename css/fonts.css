@@ -1,61 +1,95 @@
-/*--- Configuração das fontes utilizadas no site ---*/
+/*---
+Configuração das fontes utilizadas no site:
+
+    New York Extra Large
+        - Bold
+
+    New York Medium
+        - Regular
+
+    New York Small
+        - Medium
+
+    SF Pro Display
+        - Medium
+        - Bold
+
+    SF Pro Text
+        - Medium
+        - Heavy
+        - Regular
+        - Bold
+
+    SF Mono
+        - Regular
+---*/
 
 @font-face {
-    font-family: "New York Large";
-    src: local("New York Large"),
-         url(../fonts/FontsFree-Net-NewYorkLargeBold.ttf);
-    font-weight: bold;
+  font-family: "New York Extra Large";
+  src: url(../fonts/New-York-Extra-Large-Bold.otf);
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "New York Small";
-    src: local("New York Small"),
-         url(../fonts/FontsFree-Net-NewYorkSmallRegular.ttf);
-    font-weight: normal;
+  font-family: "New York Medium";
+  src: local("New York Medium"), url(../fonts/New-York-Medium-Regular.otf);
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "New York Small Medium";
-    src: local("New York Small Medium"),
-         url(../fonts/FontsFree-Net-NewYorkSmallMedium.ttf);
+  font-family: "New York Small";
+  src: local("New York Small"), url(../fonts/New-York-Small-Medium.otf);
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "SF Mono";
-    src: local("SF Mono"),
-         url(../fonts/SFMonoRegular.otf);
+  font-family: "SF Pro Display";
+  src: local("SF Pro Display"), url(../fonts/SF-Pro-Display-Medium.OTF);
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "SF Pro Display";
-    src: local("SF Pro Display"),
-         url(../fonts/SFPRODISPLAYBOLD.OTF);
-    font-weight: bold;
+  font-family: "SF Pro Display";
+  src: local("SF Pro Display"), url(../fonts/SF-Pro-Display-Bold.OTF);
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "SF Pro Display";
-    src: local("SF Pro Display"),
-         url(../fonts/SFPRODISPLAYMEDIUM.OTF);
-    font-weight: 600;
+  font-family: "SF Pro Text";
+  src: local("SF Pro Text"), url(../fonts/SF-Pro-Text-Regular.otf);
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "SF Pro Text";
-    src: local("SF Pro Text"),
-         url(../fonts/SF-Pro-Text-Regular.otf);
-    font-weight: normal;
+  font-family: "SF Pro Text";
+  src: local("SF Pro Text"), url(../fonts/SF-Pro-Text-Medium.otf);
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "SF Pro Text Medium";
-    src: local("SF Pro Text"),
-         url(../fonts/SF-Pro-Text-Medium.otf);
+  font-family: "SF Pro Text";
+  src: local("SF Pro Text"), url(../fonts/SF-Pro-Text-Bold.otf);
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "SF Pro Text";
-    src: local("SF Pro Text"),
-         url(../fonts/SF-Pro-Text-Bold.otf);
-    font-weight: bold;
+  font-family: "SF Pro Text";
+  src: local("SF Pro Text"), url(../fonts/SF-Pro-Text-Heavy.ttf);
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: local("SF Mono"), url(../fonts/SF-Mono-Regular.otf);
+  font-weight: 400;
+  font-display: swap;
 }

@@ -310,6 +310,10 @@ footer a {
     display: block;
   }
 
+  .content__spot img {
+    max-width: 100vw;
+  }
+
   .content__divisor {
     width: 100vw;
   }

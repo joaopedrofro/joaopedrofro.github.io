@@ -29,7 +29,7 @@ img {
 
 .header__center-container {
   height: inherit;
-  width: 960px;
+  max-width: 960px;
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
@@ -62,10 +62,10 @@ img {
 }
 
 .header__nav__menu a {
-  font-family: "New York Small", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'New York Small', -apple-system, sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 5px;
   height: 100%;
@@ -77,8 +77,13 @@ img {
   color: #888;
 }
 
+/*--- Botão de menu mobile ---*/
 .header__nav__btn-mobile {
   display: none;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
 }
 
 .header__nav__btn-mobile > div {
@@ -110,12 +115,10 @@ img {
 }
 
 .spot__title {
-  font-family: "New York Extra Large", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'New York Extra Large', -apple-system, sans-serif;
   font-weight: 700;
-  font-size: 1.9em;
-  line-height: 1.3em;
+  font-size: 2.4em;
+  line-height: 1.2em;
   text-align: center;
   margin: 20px 0;
 }
@@ -125,17 +128,17 @@ img {
 }
 
 .spot__caption {
-  font-family: "SF Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'SF Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.1em;
-  line-height: 1.4em;
+  line-height: 1.6em;
   text-align: center;
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .content__divisor {
   border: none;
-  height: 1px;
+  height: 2px;
   background: #000;
   width: 80%;
   margin: 20px;
@@ -143,9 +146,10 @@ img {
 
 /*--- All articles ---*/
 .content__articles h4 {
-  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 500;
+  font-family: 'New York Extra Large', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 700;
   font-size: 1.8em;
   text-align: center;
   margin-top: 30px;
@@ -176,18 +180,23 @@ img {
 }
 
 .article__title {
-  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'SF Pro Display', -apple-system, sans-serif;
   text-align: center;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.2em;
+  padding: 0 20px;
   margin-top: 10px;
   line-height: 1.2em;
 }
 
 /*--- Footer style ---*/
-.footer,
-.footer__keywords {
+footer span,
+footer p,
+footer a {
+  color: #fff;
+}
+
+.footer {
   display: flex;
 }
 
@@ -201,38 +210,33 @@ img {
 }
 
 .footer__keywords {
-  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'SF Pro Text', -apple-system, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   overflow-x: hidden;
-  width: 100%;
-  height: auto;
-  flex-wrap: nowrap;
+  line-height: 1;
+  display: flex;
   justify-content: center;
+  width: 100%;
 }
 
-footer span,
-footer p,
-footer a {
-  color: #fff;
+.footer__keywords span {
+  white-space: nowrap;
 }
 
 .footer__keywords span:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .footer__keywords span:nth-child(odd) {
   font-weight: 900;
-  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'SF Pro Text', -apple-system, sans-serif;
 }
 
 .footer__site-description {
-  max-width: 45%;
+  max-width: 50%;
   margin: 70px 0px;
-  font-family: "New York Small", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'New York Small', -apple-system, sans-serif;
   font-weight: 500;
 }
 
@@ -242,24 +246,30 @@ footer a {
 }
 
 .footer__site-description p {
-  line-height: 1.8em;
+  line-height: 1.4em;
   font-weight: 500;
+  font-size: 1.1em;
   margin-bottom: 20px;
 }
 
 .footer__site-description__social-medias a {
-  font-family: var(--primary-font);
+  font-family: 'SF Pro Text', -apple-system, sans-serif;
   text-decoration: underline;
   margin: 10px;
 }
 
+.footer__site-description__social-medias a:hover {
+  color: #ccc;
+}
+
 .footer__rights {
-  font-family: var(--primary-font);
+  font-family: 'SF Pro Text', -apple-system, sans-serif;
   line-height: 1.4em;
+  font-weight: 500;
 }
 
 /*--- Regras de responsividade ---*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 764px) {
   .header__center-container {
     width: 100%;
   }
@@ -298,16 +308,14 @@ footer a {
 
   .header__nav__btn-mobile {
     display: block;
-    padding: 5px 0 5px 5px;
-    cursor: pointer;
   }
 
   .content__divisor {
-    width: 100%;
+    width: 100vw;
   }
 
   .spot__caption {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .footer__site-description {

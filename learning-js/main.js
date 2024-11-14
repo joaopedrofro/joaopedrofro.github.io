@@ -8,9 +8,8 @@ window.addEventListener("load", () => {
       month: "short",
     }
   );
-
-  const doneTaskButton = document.querySelector("#done-task-button");
-  doneTaskButton.addEventListener("click", (e) => {
+  
+  document.querySelector("#done-task-button").addEventListener("click", (e) => {
     const icon = document.querySelector("#icon-button");
     if (icon.classList.contains("fa-arrow-right")) {
       document.querySelector("#done-tasks-container").style.display = "block";
@@ -20,7 +19,7 @@ window.addEventListener("load", () => {
       icon.classList.replace("fa-arrow-down", "fa-arrow-right");
     }
   });
-  
+
   loadSavedTasksToDocument();
 });
 

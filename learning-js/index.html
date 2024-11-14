@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>Tarefas</h1>
+      <section class="tasks-section">
+        <h3 id="data">01, nov</h3>
+        <div id="tasks-container">
+          <div class="task">
+            <input type="checkbox" id="task-1" class="task--checkbox" value="0">
+            <label for="task-1">Jantar</label>
+            <i class="fa-solid fa-trash trash-button"></i>
+          </div>
+          <div class="task">
+            <input type="checkbox" id="task-2" class="task--checkbox" value="0">
+            <label for="task-2">Dormir</label>
+            <i class="fa-solid fa-trash trash-button" title="Excluir tarefa"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+    <script src="https://kit.fontawesome.com/ebf48cbc3e.js" crossorigin="anonymous"></script>
+  </body>
+</html>

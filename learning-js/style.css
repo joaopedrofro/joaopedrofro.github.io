@@ -1,0 +1,59 @@
+* {
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  padding: 20px;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: rgb(20, 20, 20);
+  color: rgb(242, 242, 242);
+}
+
+.task {
+  display: flex;
+  border: 1px solid rgb(40, 40, 40);
+  border-radius: 6px;
+}
+
+.task:hover {
+  border: 1px solid rgb(60, 60, 60);
+}
+
+.task:active {
+  transform: scale(0.98);
+  transition: .2s ease;
+}
+
+.task label {
+  flex-grow: 2;
+  padding: 16px;
+  padding-left: 0;
+}
+
+.task input {
+  margin: 16px;
+}
+
+.task i {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.task i:hover {
+  cursor: pointer
+}
+
+.task i:before {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 10px;
+}

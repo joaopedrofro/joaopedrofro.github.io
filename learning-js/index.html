@@ -10,22 +10,21 @@
   <body>
     <main>
       <h1>Tarefas</h1>
-      <section class="tasks-section">
-        <h3 id="data">01, nov</h3>
-        <div id="tasks-container">
-          <div class="task">
-            <input type="checkbox" id="task-1" class="task--checkbox" value="0">
-            <label for="task-1">Jantar</label>
-            <i class="fa-solid fa-trash trash-button"></i>
-          </div>
-          <div class="task">
-            <input type="checkbox" id="task-2" class="task--checkbox" value="0">
-            <label for="task-2">Dormir</label>
-            <i class="fa-solid fa-trash trash-button" title="Excluir tarefa"></i>
-          </div>
+      <section class="undone-tasks-section">
+        <h3 id="data"></h3>
+        <div id="undone-tasks-container">
         </div>
       </section>
+      <section id="done-tasks-section">
+        <div id="done-task-button">
+          <p>Concluídas<i class="fa-solid fa-arrow-down" id="icon-button"></i></p>
+        </div>
+        <div id="done-tasks-container">
+        </div>
+      </section>
+      <input type="text" id="new-task-input" placeholder="Título da tarefa...">
     </main>
+    <script type="module" src="/task.js"></script>
     <script type="module" src="/main.js"></script>
     <script src="https://kit.fontawesome.com/ebf48cbc3e.js" crossorigin="anonymous"></script>
   </body>

@@ -44,7 +44,8 @@ body {
 }
 
 .task i:hover {
-  cursor: pointer
+  cursor: pointer;
+  color: rgb(240, 240, 240);
 }
 
 .task i:before {
@@ -56,4 +57,44 @@ body {
 
 .task:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.task.done {
+  opacity: 0.5;
+}
+
+#new-task-input {
+  font-size: 1.1rem;
+  outline: none;
+  margin-top: 30px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgb(40, 40, 40);
+  border-radius: 6px;
+  padding: 16px;
+  box-sizing: border-box;
+  color: rgb(242, 242, 242);
+}
+
+#new-task-input:hover {
+  border-color: rgb(80, 80, 80);
+}
+
+#new-task-input:focus {
+  border-color: rgb(60, 60, 60);
+}
+
+#done-task-button {
+  user-select: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(200, 200, 200);
+}
+
+#done-task-button:hover {
+  cursor: pointer;
+}
+
+#done-task-button i {
+  margin-left: 6px;
 }

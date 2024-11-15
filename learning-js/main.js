@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
       month: "short",
     }
   );
-  
+
   document.querySelector("#done-task-button").addEventListener("click", (e) => {
     const icon = document.querySelector("#icon-button");
     if (icon.classList.contains("fa-arrow-right")) {
@@ -20,6 +20,13 @@ window.addEventListener("load", () => {
     }
   });
 
+  document.querySelector("#new-task-button").addEventListener("click", (e) => {
+    const input = document.querySelector("#new-task-input");
+    let title = input.value;
+    addNewTaskEvent(title);
+    input.value = "";
+  });
+
   loadSavedTasksToDocument();
 });
 
@@ -29,8 +36,14 @@ input.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     let title = input.value;
     if (title.match(/(?!\s*$).+/)) {
-      addNewTask(new Task(title, new Date(), false));
+      addNewTaskEvent(title);
       input.value = "";
     }
   }
 });
+
+function addNewTaskEvent(title) {
+  if (title.match(/(?!\s*$).+/)) {
+    addNewTask(new Task(title, new Date(), false));
+  }
+}

@@ -23,36 +23,34 @@ body {
 
 .task:active {
   transform: scale(0.98);
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .task label {
   flex-grow: 2;
-  padding: 16px;
-  padding-left: 0;
+  padding: 15px 0;
+  padding-left: 10px;
 }
 
 .task input {
-  margin: 16px;
+  margin: 0;
+  margin-left: 15px;
 }
 
 .task i {
-  display: inline-block;
-  position: relative;
-  padding: 10px;
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
 }
 
 .task i:hover {
   cursor: pointer;
-  color: rgb(240, 240, 240);
+  color: rgb(200, 200, 200);
 }
 
-.task i:before {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
+.task i:hover::before {
+  line-height: 0;
+  transform: rotate(5deg);
 }
 
 .task:not(:last-child) {
@@ -66,7 +64,6 @@ body {
 #new-task-input {
   font-size: 1.1rem;
   outline: none;
-  margin-top: 30px;
   width: 100%;
   background: transparent;
   border: 1px solid rgb(40, 40, 40);
@@ -97,4 +94,23 @@ body {
 
 #done-task-button i {
   margin-left: 6px;
+}
+
+#new-task-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+#new-task-button {
+  position: absolute;
+  padding: 15px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(80, 80, 80);
+}
+
+#new-task-button:hover {
+  cursor: pointer;
+  color: rgb(242, 242, 242);
 }
